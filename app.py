@@ -49,7 +49,7 @@ def main():
                         ctgan = CTGAN()
                         
                         # Train CTGAN
-                        ctgan.fit(processed_data, epochs=10)
+                        ctgan.fit(processed_data, epochs=5)
                         
                         # Generate synthetic data
                         synthetic_data = ctgan.sample(n_records)
